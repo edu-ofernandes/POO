@@ -18,7 +18,7 @@ namespace ArrayProduto
         }
 
         public void addPercentage(double percent) {
-            this.preco = this.preco + (this.preco * percent);
+            this.preco = this.preco - (this.preco * percent);
         }
     }
 }
