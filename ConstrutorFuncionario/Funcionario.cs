@@ -1,37 +1,43 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
 namespace ConstrutorFuncionario
 {
     public class Funcionario
     {   
-        private int Codigo {get; set;}
+        public static int Codigo {get; private set;}
+        public int codigo {get; private set;}
         private string Nome {get; set;}
-        private float Salario {get; set;}
+        private double Salario {get; set;}
         public static int Qtd {get; private set;}
 
         
-        public Funcionario()
+        public Funcionario(string nome, int codigo, double salario)
         {
-            Qtd = Qtd + 1;
+            this.Nome = nome;
+            this.Salario = salario;
+            Qtd++;
+            Codigo = Codigo + codigo;
+            this.codigo = Codigo;
         }
     
         static Funcionario() 
         {
-            Qtd = 100;
+            Qtd = 0;
+            Codigo = 100;
         }
 
-        public float novoSalarioReajustado(int taxa)
+        public double novoSalarioReajustado(int taxa)
         {
             if (taxa == 0) throw new Exception("houve um erro com valor da taxa");
 
             return this.Salario + (taxa / 100 * this.Salario);
         }
 
-        public static int mostrarInstancias()
+        public void mostrarAtributos()
         {
-            return Qtd;
+            Console.WriteLine(
+                "Código: " + this.codigo + 
+                "\tNome: " + this.Nome +
+                "\tSalário: " + this.Salario 
+            );
         }
     }
 }

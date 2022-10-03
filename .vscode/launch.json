@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/AgregacaoVenda/bin/Debug/net6.0/AgregacaoVenda.dll",
+            "program": "${workspaceFolder}/ConstrutorFuncionario/bin/Debug/net6.0/ConstrutorFuncionario.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/AgregacaoVenda",
+            "cwd": "${workspaceFolder}/ConstrutorFuncionario",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false
