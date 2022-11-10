@@ -2,9 +2,9 @@ namespace projeto_departamento_abstract.Models
 {
     public abstract class Funcionario
     {
-        public string Nome { get; set; }
-        public double Salario { get; set; }
-        public int Codigo { get; set; }
+        protected string Nome { get; set; }
+        protected double Salario { get; set; }
+        protected int Codigo { get; set; }
 
         public abstract double CalcularSalario(int diasUteis);
 

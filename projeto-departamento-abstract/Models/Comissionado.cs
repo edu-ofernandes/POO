@@ -11,7 +11,7 @@ namespace projeto_departamento_abstract.Models
         }
         public override double CalcularSalario(int diasUteis)
         {
-            return this.Salario * 30 * diasUteis * this.Porcentagem + this.Salario;
+            return this.Salario / 30 * diasUteis * this.Porcentagem + this.Salario;
         }
         public override void MostrarDados() {
             base.MostrarDados();
