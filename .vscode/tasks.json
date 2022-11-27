@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/projeto-departamento-abstract/projeto-departamento-abstract.csproj",
+                "${workspaceFolder}/interfaceTributavel/interfaceTributavel.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/projeto-departamento-abstract/projeto-departamento-abstract.csproj",
+                "${workspaceFolder}/interfaceTributavel/interfaceTributavel.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/projeto-departamento-abstract/projeto-departamento-abstract.csproj"
+                "${workspaceFolder}/interfaceTributavel/interfaceTributavel.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

@@ -17,5 +17,16 @@ namespace projeto_departamento_abstract.Models
         {
             this.funcionarios.Add(funcionario);
         }
+        public int calcularDependetes()
+        {
+            int total = 0;
+
+            this.funcionarios.ForEach((Funcionario funcionario) => {
+                total+= funcionario.getTotalDependetesDepartamento();    
+            });
+
+            System.Console.WriteLine("Total de dependetes do departamento " + this.Descricao + ": " + total);
+            return total;
+        }
     }
 }

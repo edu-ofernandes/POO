@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/projeto-departamento-abstract/bin/Debug/net6.0/projeto-departamento-abstract.dll",
+            "program": "${workspaceFolder}/interfaceTributavel/bin/Debug/net6.0/interfaceTributavel.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/projeto-departamento-abstract",
+            "cwd": "${workspaceFolder}/interfaceTributavel",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false
